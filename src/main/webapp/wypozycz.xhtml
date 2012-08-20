@@ -9,24 +9,24 @@
 
 	<ui:define name="content">
 		<h:form id="personForm">
-			<h:panelGrid columns="2">
+			<h:panelGrid columns="3">
 
-				<h:outputText value=" Person " />
-				<h:selectOneMenu value="#{saleBean.personId}">
-					<f:selectItems value="#{saleBean.allPersons}" var="person"
-						itemValue="#{person.id}" itemLabel="#{person.firstName}" />
+				<h:outputText value=" Osoba " />
+				<h:selectOneMenu value="#{wypozyczBean.osobaId}">
+					<f:selectItems value="#{wypozyczBean.wszystkieOsoby}" var="osoba"
+						itemValue="#{osoba.id}" itemLabel="#{osoba.imie}"  itemLabel="#{osoba.nazwisko}"/>
 				</h:selectOneMenu>
 
-				<h:outputText value=" Car" />
-				<h:selectOneMenu value="#{saleBean.carId}">
-					<f:selectItems value="#{saleBean.availableCars}" var="car"
-						itemValue="#{car.id}" itemLabel="#{car.make} #{car.model}" />
+				<h:outputText value=" Film " />
+				<h:selectOneMenu value="#{wypozyczBean.filmId}">
+					<f:selectItems value="#{wypozyczBean.dostepneFilmy}" var="film"
+						itemValue="#{film.id}" itemLabel="#{film.make} #{film.tytul}" />
 				</h:selectOneMenu>
 
 
 			</h:panelGrid>
 
-			<h:commandButton value="Sell" action="#{saleBean.sellCar}" />
+			<h:commandButton value="Wypozycz" action="#{wypozyczBean.wypozycz.Film}" />
 
 			<h:panelGrid>
 				<h:messages id="messages" showDetail="#{true}"

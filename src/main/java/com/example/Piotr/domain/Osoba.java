@@ -1,4 +1,4 @@
-package com.example.jeedemo.domain;
+package com.example.Piotr.domain;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,17 +19,17 @@ import javax.validation.constraints.Size;
 
 @Entity
 @NamedQueries({ 
-	@NamedQuery(name = "person.all", query = "Select p from Person p")
+	@NamedQuery(name = "osoba.all", query = "Select o from Osoba o")
 })
-public class Person {
+public class Osoba {
 
 	private Long id;
+	private String imie = "imie";
+	private String nazwisko = "nazwisko";
+	private String pin = "pesel";
+	private Date dataRejestracji = new Date();
 
-	private String firstName = "unknown";
-	private String pin = "";
-	private Date registrationDate = new Date();
-
-	private List<Car> cars = new ArrayList<Car>();
+	private List<Film> film = new ArrayList<Film>();
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -41,11 +41,18 @@ public class Person {
 	}
 	
 	@Size(min = 2, max = 20)
-	public String getFirstName() {
-		return firstName;
+	public String getImie() {
+		return imie;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setImie(String imie) {
+		this.imie = imie;
+	}
+	@Size(min = 2, max = 20)
+	public String getNazwisko() {
+		return nazwisko;
+	}
+	public void setNazwisko(String nazwisko) {
+		this.nazwisko = nazwisko;
 	}
 
 	@Size(min = 2)
@@ -57,19 +64,19 @@ public class Person {
 	}
 
 	@Temporal(TemporalType.DATE)
-	public Date getRegistrationDate() {
-		return registrationDate;
+	public Date getDataRejestracji() {
+		return dataRejestracji;
 	}
-	public void setRegistrationDate(Date registrationDate) {
-		this.registrationDate = registrationDate;
+	public void setDataRejestracji(Date dataRejestracji) {
+		this.dataRejestracji = dataRejestracji;
 	}
 
 	// Be careful here, both with lazy and eager fetch type
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	public List<Car> getCars() {
-		return cars;
+	public List<Film> getFilm() {
+		return film;
 	}
-	public void setCars(List<Car> cars) {
-		this.cars = cars;
+	public void setFilm(List<Film> film) {
+		this.film = film;
 	}
 }
