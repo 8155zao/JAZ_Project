@@ -66,9 +66,9 @@ public class OsobaFormBean implements Serializable {
 		return "szczegoly";
 	}
 	
-	//public String disposeCar(){
-			//Film carToDispose = osobaWypFilm.getRowData();
-			//ow.disposeCar(pokazOsobe, carToDispose);
-			//return null;
-		//}
+	public String dostepnyFilm(){
+			Film filmDostepny = osobaWypFilm.getRowData();
+			ow.dostepnyFilm(pokazOsobe, filmDostepny);
+			return null;
+		}
 }

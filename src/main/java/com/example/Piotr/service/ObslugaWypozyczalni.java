@@ -34,7 +34,7 @@ public class ObslugaWypozyczalni {
 		return em.createNamedQuery("film.dostepny").getResultList();
 	}
 
-	public void osobaWypFilm(Osoba osoba, Film film) {
+	public void dostepnyFilm(Osoba osoba, Film film) {
 
 		osoba = em.find(Osoba.class, osoba.getId());
 		film = em.find(Film.class, film.getId());

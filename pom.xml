@@ -5,7 +5,7 @@
 	<artifactId>Piotr_8155</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Piotr_8155</name>
+	<name>Piotr</name>
   <url>http://maven.apache.org</url>
 	
 	<properties>
@@ -94,7 +94,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>Piotr</finalName>
+		<finalName>Piotr_8155</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
