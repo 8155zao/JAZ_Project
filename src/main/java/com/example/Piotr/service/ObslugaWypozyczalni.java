@@ -10,10 +10,7 @@ import com.example.Piotr.domain.Film;
 import com.example.Piotr.domain.Osoba;
 
 
-/* 
- * This is a Stateless EJB Bean
- * All its methods are transactional
- */
+
 @Stateless
 public class ObslugaWypozyczalni {
 

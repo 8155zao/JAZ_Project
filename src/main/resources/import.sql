@@ -1,10 +1,9 @@
-INSERT INTO person(firstName, pin, registrationDate) VALUES ('Bolek', '1234', '2012-01-10')
-INSERT INTO person(firstName, pin, registrationDate) VALUES ('Lolek', '1235', '2012-01-10')
-INSERT INTO person(firstName, pin, registrationDate) VALUES ('Tola', '1236', '2012-01-10')
+INSERT INTO osoba(imie, pin, dataRejestracji) VALUES ('Bolek', '1234', '2012-01-10')
+INSERT INTO osoba(imie, pin, dataRejestracji) VALUES ('Lolek', '1235', '2012-01-10')
+INSERT INTO osoba(imie, pin, dataRejestracji) VALUES ('Tola', '1236', '2012-01-10')
 
-INSERT INTO car(make, model, sold) VALUES ('Fiat', 'Bravo', false)
-INSERT INTO car(make, model, sold) VALUES ('Ford', 'Mondeo', false)
-INSERT INTO car(make, model, sold) VALUES ('Ford', 'Focus', false)
-INSERT INTO car(make, model, sold) VALUES ('Opel', 'Vectra', false)
-INSERT INTO car(make, model, sold) VALUES ('Opel', 'Astra', false)
-INSERT INTO car(make, model, sold) VALUES ('Renault', 'Megane', false)
+INSERT INTO film(stworz, tytul, wypoz) VALUES ('Sensacja', 'szklanka po lapkach', false)
+INSERT INTO film(stworz, tytul, wypoz) VALUES ('komedia', 'Kingsize', false)
+INSERT INTO film(stworz, tytul, wypoz) VALUES ('Dramat', '6 Zmysl', false)
+INSERT INTO film(stworz, tytul, wypoz) VALUES ('Komedio-dramat', 'Forest Gump', false)
+

@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
 @Entity
-@NamedQuery(name = "Film.dostepny", query = "Select f from Film f where f.wypoz = false")
+@NamedQuery(name = "film.dostepny", query = "Select f from Film f where f.wypoz = false")
 public class Film {
 	
 	private Long id;

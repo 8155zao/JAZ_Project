@@ -7,6 +7,7 @@ import javax.faces.model.ListDataModel;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+
 import com.example.Piotr.domain.Film;
 import com.example.Piotr.domain.Osoba;
 import com.example.Piotr.service.ObslugaOsoby;
@@ -65,6 +66,7 @@ public class OsobaFormBean implements Serializable {
 		pokazOsobe = osoby.getRowData();
 		return "szczegoly";
 	}
+	
 	
 	public String dostepnyFilm(){
 			Film filmDostepny = osobaWypFilm.getRowData();

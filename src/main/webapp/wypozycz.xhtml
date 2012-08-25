@@ -9,24 +9,24 @@
 
 	<ui:define name="content">
 		<h:form id="personForm">
-			<h:panelGrid columns="3">
+			<h:panelGrid columns="2">
 
 				<h:outputText value=" Osoba " />
 				<h:selectOneMenu value="#{wypozyczBean.osobaId}">
 					<f:selectItems value="#{wypozyczBean.wszystkieOsoby}" var="osoba"
-						itemValue="#{osoba.id}" itemLabel="#{osoba.imie}"  itemLabel="#{osoba.nazwisko}"/>
+						itemValue="#{osoba.id}" itemLabel="#{osoba.nazwisko}  #{osoba.imie}"/>
 				</h:selectOneMenu>
 
 				<h:outputText value=" Film " />
 				<h:selectOneMenu value="#{wypozyczBean.filmId}">
 					<f:selectItems value="#{wypozyczBean.dostepneFilmy}" var="film"
-						itemValue="#{film.id}" itemLabel="#{film.stworz} #{film.tytul}" />
+						itemValue="#{film.id}" itemLabel="#{film.stworz} - #{film.tytul}" />
 				</h:selectOneMenu>
 
 
 			</h:panelGrid>
 
-			<h:commandButton value="Wypozycz" action="#{wypozyczBean.wypozycz.Film}" />
+			<h:commandButton value="Wypozycz" action="#{wypozyczBean.wypozyczFilm}" />
 
 			<h:panelGrid>
 				<h:messages id="messages" showDetail="#{true}"

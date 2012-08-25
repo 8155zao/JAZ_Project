@@ -11,11 +11,11 @@
 				<f:facet name="header">#{msg.personAllLabel}</f:facet>
 				<h:column>
 					<f:facet name="header">#{msg.personFirstNameLabel}</f:facet>
-					<h:outputText value="#{item.Imie}" />
+					<h:outputText value="#{item.imie}" />
 				</h:column>
 				<h:column>
 					<f:facet name="header">#{msg.personLastNameLabel}</f:facet>
-					<h:outputText value="#{item.Nazwisko}" />
+					<h:outputText value="#{item.nazwisko}" />
 				</h:column>
 
 				<h:column>
@@ -27,7 +27,7 @@
 					<f:facet name="header">#{msg.action}</f:facet>
 					<h:commandLink value="#{msg.actionDelete}"
 						action="#{osobaBean.usunOsobe}" />
-					<h:commandLink value=" Szczgoly " action="#{osobaBean.pokazSzczegoly}"/>
+					<h:commandLink value=" Szczegoly " action="#{osobaBean.pokazSzczegoly}"/>
 				</h:column>
 
 			</h:dataTable>
