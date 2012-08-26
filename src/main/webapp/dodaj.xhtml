@@ -9,20 +9,20 @@
 
 	<ui:define name="content">
 		<h:form id="personForm">
-			<h:panelGrid columns="3">
+			<h:panelGrid columns="2">
 
 				<h:outputText value="#{msg.personFirstNameLabel}" />
 				<h:inputText id="imie" value="#{osobaBean.osoba.imie}"
-					required="#{true}" />
+					required="#{true}" /> 
 					
 				<h:outputText value="#{msg.personLastNameLabel}" />
 				<h:inputText id="nazwisko" value="#{osobaBean.osoba.nazwisko}"
-					required="#{true}" />
+					required="#{true}" /> 
 
 				<h:outputText value="#{msg.personPinLabel}" />
 				<h:inputText id="pin" value="#{osobaBean.osoba.pin}" />
 
-				<h:outputText value="Registration date" />
+				<h:outputText value="#{msg.registrationDate}" />
 				<rich:calendar value="#{osobaBean.osoba.dataRejestracji}"
 					id="calendar" datePattern="dd.MM.yyyy" showApplyButton="#{true}"
 					style="width:200px">

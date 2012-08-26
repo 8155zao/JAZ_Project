@@ -24,9 +24,9 @@ import javax.validation.constraints.Size;
 public class Osoba {
 
 	private Long id;
-	private String imie = "imie";
-	private String nazwisko = "nazwisko";
-	private String pin = "pesel";
+	private String imie = "";
+	private String nazwisko = "";
+	private String pin = "";
 	private Date dataRejestracji = new Date();
 
 	private List<Film> film = new ArrayList<Film>();
