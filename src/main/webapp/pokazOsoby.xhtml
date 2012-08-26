@@ -24,10 +24,10 @@
 				</h:column>
 
 				<h:column>
-					<f:facet name="header">#{msg.action}</f:facet>
+					<f:facet name="header">#{msg.option}</f:facet>
 					<h:commandLink value="#{msg.actionDelete}"
 						action="#{osobaBean.usunOsobe}" />
-					<h:commandLink value=" Szczegoly " action="#{osobaBean.pokazSzczegoly}"/>
+					<h:commandLink value="  | Szczegoly " action="#{osobaBean.pokazSzczegoly}"/>
 				</h:column>
 
 			</h:dataTable>
