@@ -7,10 +7,10 @@
 
 	<ui:define name="content">
 		<h:form>
-			<h:dataTable value="#{osobaBean.OsobaWypFilm}" var="item">
+			<h:dataTable value="#{osobaBean.osobaWypFilm}" var="item">
 				<f:facet name="header">Wypozyczone filmy</f:facet>
 				<h:column>
-					<f:facet name="header">Stworz</f:facet>
+					<f:facet name="header">Gatunek</f:facet>
 					<h:outputText value="#{item.stworz}" />
 				</h:column>
 

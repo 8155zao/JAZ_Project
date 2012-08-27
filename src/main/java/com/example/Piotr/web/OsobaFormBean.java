@@ -44,7 +44,7 @@ public class OsobaFormBean implements Serializable {
 		return osoby;
 	}
 
-	public ListDataModel<Film> OsobaWypFilm() {
+	public ListDataModel<Film> getOsobaWypFilm() {
 		osobaWypFilm.setWrappedData(oo.getOsobaWypFilm(pokazOsobe));
 		return osobaWypFilm;
 	}
