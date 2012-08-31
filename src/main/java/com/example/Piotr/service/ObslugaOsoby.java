@@ -23,7 +23,7 @@ public class ObslugaOsoby {
 
 	public void usunOsobe(Osoba osoba) {
 		osoba = em.find(Osoba.class, osoba.getId());
-		em.remove(osoba);
+		em.remove(osoba); 
 	}
 
 	@SuppressWarnings("unchecked")
@@ -33,7 +33,7 @@ public class ObslugaOsoby {
 
 	public List<Film> getOsobaWypFilm(Osoba osoba) {
 		osoba = em.find(Osoba.class, osoba.getId());
-		// lazy loading here - try this code without this (shallow) copying
+	
 		List<Film> film = new ArrayList<Film>(osoba.getFilm());
 		return film;
 	}

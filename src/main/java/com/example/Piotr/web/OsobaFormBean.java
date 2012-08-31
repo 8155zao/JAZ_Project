@@ -67,6 +67,14 @@ public class OsobaFormBean implements Serializable {
 		return "szczegoly";
 	}
 	
+	public String poprawOsobe(){
+		return "dodaj";
+	}
+
+	public String potwierdzOsobe(){
+		return "Potwierdzenie1";
+	}
+	
 	
 	public String dostepnyFilm(){
 			Film filmDostepny = osobaWypFilm.getRowData();
